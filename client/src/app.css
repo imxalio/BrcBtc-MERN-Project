@@ -1,0 +1,142 @@
+/* button color #8C6F42 */
+/* background color  #f89e32*/
+
+@font-face {
+  font-family: invaders;
+  src: url(./assets/invaders.ttf);
+}
+@font-face {
+  font-family: pixelmix;
+  src: url(./assets/pixelmix.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: pixelmix;
+  background-color: #f89e32;
+}
+html {
+  font-size: 55%;
+}
+
+#root {
+  max-width: 120rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 0rem 4rem;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  font-family: invaders;
+  justify-content: end;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  color: #222;
+  font-size: 1.8rem;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.item-container img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.item-info-container {
+  padding: 1rem 2rem;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  margin-bottom: 1rem;
+  border: 0;
+  background-color: #32200a;
+  color: #fccf99;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #32200a;
+  box-shadow: inset 0 0 0 0.4rem #32200a;
+  background-color: #f89e32;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.form-div label {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-div input,
+textarea {
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: #32200a solid;
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .projects-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-section {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 4.4rem;
+  }
+  .item-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*  */
